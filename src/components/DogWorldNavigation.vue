@@ -10,7 +10,10 @@
     </li>
     <li class="navigation__links-container">
       <div class="navigation__hamburger" @click="toggleMenu">
-        <img :src="require('../assets/img/icon-hamburger.svg')" alt="" />
+        <img
+          :src="require('../assets/img/icon-hamburger.svg')"
+          alt="hamburger icon"
+        />
       </div>
       <ul class="navigation__links" :class="hideMenu ? 'mobile-hide' : ''">
         <li class="navigation__link">
@@ -98,7 +101,7 @@ $dark-gray: #333333;
 }
 @media screen and (min-width: 768px) {
   .navigation {
-    max-width: 1010px;
+    max-width: 1170px;
     margin: auto;
     &__hamburger {
       display: none;
